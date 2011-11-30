@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for d in "$PREFIX" "$PORTSDIR" "$PORTSDIR/packages" "$PORTSDIR/distfiles" "$PORT_DBDIR" "$PKG_DBDIR"; do
+  test -d "$d" || mkdir -p "$d"
+done
+
+exit 0
+

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for f in Mk Templates Tools; do
+  test -e "$PORTSDIR/$f" || cvs co "ports/$f"
+done
+
+exit 0
+
